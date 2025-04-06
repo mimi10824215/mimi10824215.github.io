@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menugo點餐系統</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!--引用資料夾的CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--中文字型，都是在google font上面找的-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+        <!--英文字型，都是在google font上面找的-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+        <!--font awesome css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <header>
+       
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Menugogo.png" alt="" width="70">
+                </a>
+    
+              
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                     <h1>Menugo點餐系統</h1>
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="fa-solid fa-home"></i> 首頁
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="second.html"><i class="fa-solid fa-utensils"></i> 菜單</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-cart-shopping"></i> 作品集
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="second.html">第二頁</a></li>
+                                <li><a class="dropdown-item" href="./圍棋網站/go.html">圍棋網站</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="./日本旅遊網站/index.html">其他東西</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-regular fa-address-book"></i> 聯絡我們</a>
+                        </li>
+                    </ul>
+    
+                  
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success"style="background-color:yellow" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <section class="background-img">
+          <div class="filter"></div>
+          <h3>美食饗宴，盡情享受！<br />探索我們的精選美食，滿足您的味蕾。</h3>
+        </section>
+        <section class="info-circles">
+          <h3>推薦餐點</h3>
+          <div class="circles">
+            <div class="circle">
+              <img src="./img/beef_burger.png" alt="漢堡" />
+              <p>多汁美味的招牌漢堡</p>
+            </div>
+            <div class="circle">
+              <img src="./img/fries.png" alt="薯條" />
+              <p>人見人愛的薯條</p>
+            </div>
+            <div class="circle">
+              <img src="./img/cheese_pork.png" alt="牛排" />
+              <p>香煎牛排，極致口感</p>
+            </div>
+            <div class="circle">
+              <img src="./img/fried_tofu.png" alt="涼拌豆腐" />
+              <p>滑順可口的涼拌豆腐</p>
+            </div>
+          </div>
+        </section>       
+      </main>
+    
+      <section id="latest">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+            <h3>優惠活動</h3>
+            <p>最新優惠活動，讓你享受更多美食</p>
+                </div>
+            <div class="col-md-4 text-left">
+                <div class="outer">
+                <a href="#">
+                    <div class="upper">
+                        <img src="img/bugersale.png" alt="">
+                        <div class="innertext">
+                            <span class="text-light fw-semibold">優惠中</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="lower">
+                    <h3>美味漢堡套餐優惠中</h3>
+                    <p><i class="fa-sharp fa-solid fa-calendar"></i> 2025/1/1~2025/4/1</p>
+                    <p><i class="fa-solid fa-drumstick-bite"></i>超人氣漢堡套餐優惠特價中</p>
+                    <button class="btn md-3" style="background-color:  rgb(9, 126, 15);">了解更多</button>
+                </div>
+                </div>
+            </div>
+        <!-- 第二個卡片 -->
+        <div class="col-md-4 text-center">
+            <div class="outer">
+            <a href="#">
+                <div class="upper">
+                <img src="img/nodelessale.png" alt="">
+                <div class="innertext">
+                    <span class="text-light fw-semibold">優惠中</span>
+                </div>
+                </div>
+            </a>
+            <div class="lower">
+                <h3>人氣拉麵優惠</h3>
+                <p><i class="fa-sharp fa-solid fa-calendar"></i> 2025/1/1~2025/4/1</p>
+                <p><i class="fa-solid fa-drumstick-bite"></i>超人氣拉麵優惠特價中</p>
+                <button class="btn md-3" style="background-color: rgb(9, 126, 15);">了解更多</button>
+            </div>
+            </div>
+        </div>
+        <!-- 第三個卡片 -->
+        <div class="col-md-4 text-center">
+            <div class="outer">
+            <a href="#">
+                <div class="upper">
+                <img src="img/pizzasale.png" alt="">
+                <div class="innertext">
+                    <span class="text-light fw-semibold">優惠中</span>
+                </div>
+                </div>
+            </a>
+            <div class="lower">
+                <h3>美味比薩優惠特價中</h3>
+                <p><i class="fa-sharp fa-solid fa-calendar"></i> 2025/1/1~2025/4/1</p>
+                <p><i class="fa-solid fa-drumstick-bite"></i>超人氣比薩優惠特價中</p>
+                <button class="btn md-3" style="background-color: rgb(9, 126, 15);">了解更多</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+  
+    <section id="email">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+              <h3>訂閱電子報</h3>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-8 offset-md-2 text-center">
+              <p>訂閱我們的電子報，搶先獲得最新餐點與優惠消息！</p>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" aria-label="請輸入email" aria-describedby="inputGroup-sizing-lg" placeholder="請輸入 email">
+              </div>
+              <a class="btn btn-primary btn-lg mt-4" href="#" role="button">訂閱</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col order-first">
+                    <img src="img/Menugogo.png" alt="" width="150">
+                </div>
+                <div class="col">
+                    <h4>官網連結</h4>
+                    <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i> youtube</a></li>       
+                </ul>
+                </div>
+                <div class="col">
+                    <h4>網站地圖</h4>
+                    <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">最新消息</a></li>                    
+                </ul>
+                </div>
+                <div class="col order-last">
+                    <h4>聯繫我們</h4>
+                    <p>
+                    地址:彰化縣XXxxxxxx<br>
+                    電話:0909888888<br>
+                    E-Mail:<a href="mailto:worldpeace0401@gmail.com">world@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
