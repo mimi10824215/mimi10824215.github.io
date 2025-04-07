@@ -57,7 +57,7 @@
                                 <li><a class="dropdown-item" href="./個人履歷/index.html">個人履歷網站</a></li>
                                 <li><a class="dropdown-item" href="./圍棋網站/go.html">圍棋網站</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="./日本旅遊網站/index.html">其他東西</a></li>
+                                <li><a class="dropdown-item" href="./日本旅遊網站/index.html">日本旅遊網站</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -74,7 +74,6 @@
             </div>
         </nav>
     </header>
-    
     <main>
         
         <section class="background-img">
@@ -188,6 +187,18 @@
           </div>
         </div>
       </section>
+      <!-- 引入 Vanta.js -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+
+      <script>
+        VANTA.WAVES({
+          el: "#email", // 目標元素
+          color: 0x00bfff, // 波浪顏色
+          waveHeight: 20,  // 波浪高度
+          shininess: 50    // 光澤度
+        });
+      </script>
         <footer>
         <div class="container">
             <div class="row">
@@ -221,4 +232,21 @@
         </div>
         </footer>
     </body>
+    
+    <script>
+        setInterval(() => {
+          let topBackground = document.querySelector("section.background-img");
+          if (
+            topBackground.style.backgroundImage == 'url("./img/Food_1.jpg")'
+          ) {
+            topBackground.style.backgroundImage = 'url("./img/Food_2.jpg")';
+          } else if (
+            topBackground.style.backgroundImage == 'url("./img/Food_2.jpg")'
+          ) {
+            topBackground.style.backgroundImage = 'url("./img/Food_3.jpg")';
+          } else {
+            topBackground.style.backgroundImage = 'url("./img/Food_1.jpg")';
+          }
+        }, 2000);
+      </script>
 </html>

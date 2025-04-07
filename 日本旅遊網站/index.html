@@ -20,12 +20,14 @@
     <header>
       <section class="logo">
         <img src="./images/網站Logo.svg" alt="日本旅遊網Logo" />
-        <h1>2023日本旅遊推薦</h1>
+        <h1>2025日本旅遊推薦</h1>
       </section>
       <nav>
         <ul>
           <li>
-            <a href="#"><i class="fa-solid fa-plane"></i> 日本旅遊</a>
+            <a href="../index.html"
+              ><i class="fa-solid fa-plane"></i> 日本旅遊</a
+            >
           </li>
           <li>
             <a href="#"
@@ -95,7 +97,7 @@
     <footer>
       <section class="logo">
         <img src="./images/網站Logo.svg" alt="logo" />
-        <h3>2023日本旅遊推薦</h3>
+        <h3>2025日本旅遊推薦</h3>
       </section>
       <section class="links">
         <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
@@ -109,15 +111,15 @@
       setInterval(() => {
         let topBackground = document.querySelector("section.background-img");
         if (
-          topBackground.style.backgroundImage == 'url("../images/日本櫻花.jpg")'
+          topBackground.style.backgroundImage == 'url("./images/日本櫻花.jpg")'
         ) {
-          topBackground.style.backgroundImage = 'url("../images/京都古城.jpg")';
+          topBackground.style.backgroundImage = 'url("./images/京都古城.jpg")';
         } else if (
-          topBackground.style.backgroundImage == 'url("../images/京都古城.jpg")'
+          topBackground.style.backgroundImage == 'url("./images/京都古城.jpg")'
         ) {
-          topBackground.style.backgroundImage = 'url("../images/大阪街頭.jpg")';
+          topBackground.style.backgroundImage = 'url("./images/大阪街頭.jpg")';
         } else {
-          topBackground.style.backgroundImage = 'url("../images/日本櫻花.jpg")';
+          topBackground.style.backgroundImage = 'url("./images/日本櫻花.jpg")';
         }
       }, 3000);
     </script>
